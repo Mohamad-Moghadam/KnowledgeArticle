@@ -13,9 +13,6 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 def generate_summary(sender, instance, created, **kwargs):
     old_des = sender.objects.get(pk=instance.pk).description
 
-    # if old_des == instance.description:
-    #     return
-
     description = instance.description
     response = client.chat.completions.create(
             model="gpt-3.5-turbo",
@@ -26,4 +23,3 @@ def generate_summary(sender, instance, created, **kwargs):
         )
     summary = response.choices[0].message.content
     instance.summary = summary
-    # instance.save(update_fields=['summary'])
