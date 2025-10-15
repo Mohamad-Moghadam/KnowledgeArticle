@@ -2,6 +2,21 @@
 
 ## A web-application designed to get critical skills such as programming from the admins and crreates articles regarding those knowledges by editors.
 ***
+### Admin accessibility & responsibilities:
+#### Has all the permissions in the app to "add", "update", "delete", and "view" all knowledges, articles, and users.
+#### Is responsible to create knowledges and maintain articles to keep the app efficient.
+---
+### Editor accessibility & responsibilities:
+#### Has permission to create an article consisting of at least 50 charachters of description and maintain its own articles.
+#### Is responsible to keep the app active by adding and updating its articles.
+---
+### Viewr accessibility:
+#### Can view all the articles they want.
+#### Could get notified about the uploaded articles in the future.
+---
+### Unauthorized clients accessibility:
+#### Can only view the articles in the app.
+***
 # 🔧 How to set up
 1. Clone the repo to your own desktop
 2. Obtain the .env file and the databse credentials from the administrator
