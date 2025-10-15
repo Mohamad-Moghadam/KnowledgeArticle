@@ -1,0 +1,323 @@
+{
+	"info": {
+		"_postman_id": "64a4af4a-b3c6-49d7-854f-d3e01836994d",
+		"name": "Ariana",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42911762"
+	},
+	"item": [
+		{
+			"name": "Knowledge",
+			"item": [
+				{
+					"name": "listknowledge",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "create knowledge",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/knowledge/create-knowledge",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"knowledge",
+								"create-knowledge"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit-knowledge",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYwNTE4MTM4LCJpYXQiOjE3NjA1MTc4MzgsImp0aSI6IjBhM2IwMTg4MzQ5OTQ0Y2RiMGRlNDg5OWIwYTNkZDZhIiwidXNlcl9pZCI6IjgifQ.kstvyDtuUuF4X0oK25OKeQjvFobvTFPF13MzpHrVV9w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"update\",\n    \"description\": \"hello\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/knowledge/edit-knowledge/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"knowledge",
+								"edit-knowledge",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete knowledge",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYwNTE4MTM4LCJpYXQiOjE3NjA1MTc4MzgsImp0aSI6IjBhM2IwMTg4MzQ5OTQ0Y2RiMGRlNDg5OWIwYTNkZDZhIiwidXNlcl9pZCI6IjgifQ.kstvyDtuUuF4X0oK25OKeQjvFobvTFPF13MzpHrVV9w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"update\",\n    \"description\": \"hello\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/knowledge/delete-knowledge/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"knowledge",
+								"delete-knowledge",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Article",
+			"item": [
+				{
+					"name": "list article",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "create-article",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYwNTE4MTM4LCJpYXQiOjE3NjA1MTc4MzgsImp0aSI6IjBhM2IwMTg4MzQ5OTQ0Y2RiMGRlNDg5OWIwYTNkZDZhIiwidXNlcl9pZCI6IjgifQ.kstvyDtuUuF4X0oK25OKeQjvFobvTFPF13MzpHrVV9w",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"update\",\n    \"description\": \"hello\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/article/create-article",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"article",
+								"create-article"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-article",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYwNTIyODY4LCJpYXQiOjE3NjA1MjI1NjgsImp0aSI6IjQzMGE3ZGVmOTM1ZDQyYzlhMDAzM2I5YjJiNWQwN2YyIiwidXNlcl9pZCI6IjkifQ.SgT0hZNrGXTqgPSrv-OTFmMgXkJZfIbGDNfOo5kIiJc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"update\",\n    \"description\": \"no\",\n    \"knowledge\" : 2,\n    \"creator\" : 8\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/article/update-article/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"article",
+								"update-article",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-article",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYwNTIzMzk1LCJpYXQiOjE3NjA1MjMwOTUsImp0aSI6IjQyNjFkYmRmOTc2NTQ3Y2NiZDY5MDQ5M2EwMTY2MGU0IiwidXNlcl9pZCI6IjkifQ.YbwXWyIhDxnZX6G903EtNSXauyz1j0uHJ0fqqi3Efkk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"update\",\n    \"description\": \"hello\"\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/article/delete-article/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"article",
+								"delete-article",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "sign-up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\" : \"moe\",\n    \"password\" : \"9999\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user/sign-up",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"sign-up"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "log-in",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "refresh-login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"refresh\" : \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc2MDYxMTg0NSwiaWF0IjoxNzYwNTI1NDQ1LCJqdGkiOiJmOWI4MDYxZmQ1ZTQ0ZTU2ODg5YTk3MDVlM2FiYWM2MCIsInVzZXJfaWQiOiI4In0.r1QlcG6-P0588h69s-wVBCkpv989c21VJxT6K4XVw9w\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user/refresh-login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"refresh-login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
