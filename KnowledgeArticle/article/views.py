@@ -27,3 +27,4 @@ class DeleteArticleView(DestroyAPIView):
     permission_classes = [IsAdminOrEditorUser]
     queryset = Article.objects.all()
     serializer_class = ArticleSerializer
+
